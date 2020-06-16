@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:onClick="launchMain"
+
+        android:text="＋"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="50%" />
+
+    <Button
+        android:id="@+id/btn_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="launchMain"
+        android:text="－"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="50%" />
+
+    <Button
+        android:id="@+id/btn_mul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/holo_orange_light"
+        android:onClick="launchMain"
+        android:text="×"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="50%" />
+
+    <Button
+        android:id="@+id/btn_div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:background="@android:color/holo_green_dark"
+        android:onClick="launchMain"
+        android:text="÷"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="50%" />
+</androidx.percentlayout.widget.PercentFrameLayout>
