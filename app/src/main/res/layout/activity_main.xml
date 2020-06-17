@@ -57,4 +57,14 @@
         android:textStyle="bold"
         app:layout_heightPercent="50%"
         app:layout_widthPercent="50%" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_round"
+        android:onClick="launchConfig"
+        android:src="@android:drawable/ic_menu_manage" />
+
 </androidx.percentlayout.widget.PercentFrameLayout>

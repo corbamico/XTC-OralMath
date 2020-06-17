@@ -20,7 +20,7 @@ public class MainActivity2 extends Activity {
         mTextViewRemain = findViewById(R.id.textView_Remain);
         mOperator = getIntent().getIntExtra("operator",0);
 
-        new CountDownTimer(120000,1500){
+        new CountDownTimer(120000,MainActivity.mSpeeds[MainActivity.mSpeedId]){
             @Override
             public void onTick(long l) {
                 mTextView.setText(generateText(mOperator));

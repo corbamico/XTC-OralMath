@@ -7,6 +7,8 @@ import android.view.View;
 
 public class MainActivity extends Activity {
     int[]  mOperators = {R.id.btn_plus,R.id.btn_minus,R.id.btn_mul,R.id.btn_div};
+    public static int[] mSpeeds = {1500,2000,3000,4000};
+    public static int mSpeedId = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +19,11 @@ public class MainActivity extends Activity {
     public void launchMain(View view){
         Intent intent = new Intent(this,MainActivity2.class);
         intent.putExtra("operator",getOperatorById(view.getId()));
+        startActivity(intent);
+    }
+
+    public void launchConfig(View view){
+        Intent intent = new Intent(this,ConfigActivity.class);
         startActivity(intent);
     }
 
