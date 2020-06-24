@@ -41,4 +41,17 @@
         android:textSize="16sp"
         app:layout_widthPercent="50%" />
 
+    <CheckBox
+        android:id="@+id/checkBox_Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:autoText="false"
+        android:checked="false"
+        android:duplicateParentState="false"
+        android:gravity="center|right"
+        android:layoutDirection="rtl"
+        android:text="显示结果"
+        android:textSize="20sp" />
+
 </androidx.percentlayout.widget.PercentFrameLayout>
